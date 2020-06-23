@@ -1,0 +1,72 @@
+.fieldRow {
+    display: flex;
+    justify-content: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    width: 75px;
+    height: 75px;
+
+    animation-name: showAnimation;
+    animation-duration: 0.25s;
+    opacity: 1;
+}
+
+.sandybrown {
+    background: sandybrown;
+}
+
+.brown {
+    background: brown;
+}
+
+@keyframes showAnimation {
+    0%   {opacity: 0;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes showAnimation {
+    0%   {opacity: 0;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@media screen and (max-width: 770px) {
+    .field {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width:610px) {
+    .field {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width:510px) {
+    .field {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    .field {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width:310px) {
+    .field {
+        width: 25px;
+        height: 25px;
+    }
+}
